@@ -26,7 +26,14 @@ int main(int argc, const char * argv[])
         NSMutableArray *mutableArray4 = [[NSMutableArray alloc] initWithArray:array2];
         NSMutableArray *mutableArray5 = [NSMutableArray arrayWithObjects:mutableArray1, mutableArray2, mutableArray3, nil];
         
-        NSSet *set1 = [NSSet setWithArray:array2];
+        NSMutableArray *mutArray=[NSMutableArray new];
+        
+        NSString *text=@"some text";
+        
+        
+        
+        NSString *formatedString=[NSString stringWithFormat:@"%@: здесь был текст",text];
+   
         
         NSMutableSet *mutableSet1 = [NSMutableSet set];
         [mutableSet1 addObject:mutableArray1];
@@ -34,7 +41,14 @@ int main(int argc, const char * argv[])
         
         BOOL hasValue = [mutableSet1 containsObject:mutableArray1];
         
+        
+        
+        
+        
+        
         NSDictionary *dictionary1 = @{@"key" : @"value"};
+        
+        
         
         NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionary];
         [mutableDictionary setObject:array2 forKey:@"keyOfArray2"];
@@ -46,6 +60,29 @@ int main(int argc, const char * argv[])
         [mutableDictionary setObject:stringValue2 forKey:key2];
         
         NSLog(@"");
+        
+        
+        NSDictionary *pcShop = @{@"laptop"    : @[@"asus",@"apple",@"lenovo"],
+                                 @"pc"        : @[@"asus",@"acer",@"hp"],
+                                 @"monoblock" : @[@"bravo",@"microsoft",@"apple"] };
+                                 
+        NSDictionary *appleMania= @{@"laptop"    : @[@"amcbook pro",@"macbook air",@"macbook"],
+                                    @"pc"        : @[@"Mac mini"],
+                                    @"monoblock" : @[@"iMac"]};
+                                                          
+                                       
+                    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         // сортировка
